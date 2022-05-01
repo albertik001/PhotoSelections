@@ -23,6 +23,3 @@ fun Fragment.overrideOnBackPressed(onBackPressed: OnBackPressedCallback.() -> Un
     }
 }
 
-inline fun <reified T : Fragment> Fragment.parentFragmentInNavHost(): T {
-    return ((parentFragment as NavHostFragment).parentFragment as T)
-}
