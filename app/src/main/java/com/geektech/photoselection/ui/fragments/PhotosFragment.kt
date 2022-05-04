@@ -1,5 +1,6 @@
 package com.geektech.photoselection.ui.fragments
 
+import android.view.View
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -11,6 +12,7 @@ import com.geektech.photoselection.common.extensions.submitData
 import com.geektech.photoselection.data.model.Picture
 import com.geektech.photoselection.databinding.FragmentPhotosBinding
 import com.geektech.photoselection.ui.adapters.PhotosAdapter
+
 
 class PhotosFragment : BaseFragment<FragmentPhotosBinding>(R.layout.fragment_photos) {
 
@@ -34,15 +36,17 @@ class PhotosFragment : BaseFragment<FragmentPhotosBinding>(R.layout.fragment_pho
     override fun initViews() {
         setupAdapter()
         photoAdapter.submitData(addPicture())
+
     }
 
     private fun setupAdapter() {
+        binding.recyclerview.overScrollMode = View.OVER_SCROLL_NEVER
         binding.recyclerview.adapter = photoAdapter
         binding.recyclerview.layoutManager = GridLayoutManager(context, 3)
     }
 
     override fun initListeners() {
-        binding.btnNext.setOnClickListener {
+        binding.fabNext.setOnClickListener {
             viewModel.putPicture(photoAdapter.selectedList)
             findNavController().navigateSafely(R.id.action_photosFragment_to_selectedPhotoFragment)
         }
