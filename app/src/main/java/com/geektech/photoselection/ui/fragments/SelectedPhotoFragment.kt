@@ -1,5 +1,6 @@
 package com.geektech.photoselection.ui.fragments
 
+import android.view.View
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
@@ -22,7 +23,14 @@ class SelectedPhotoFragment :
         setupAdapter()
     }
 
+    override fun initListeners() {
+        binding.btnArrowBack.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+    }
+
     private fun setupAdapter() {
+        binding.recyclerview.overScrollMode = View.OVER_SCROLL_NEVER
         binding.recyclerview.adapter = photosAdapter
         binding.recyclerview.layoutManager = GridLayoutManager(context, 3)
     }

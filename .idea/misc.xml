@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/drawable/arorwws.xml" value="0.1975" />
+        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/drawable/ic_baseline_airplanemode_active_24.xml" value="0.204" />
+        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/drawable/ic_vector_plane.xml" value="0.204" />
         <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/layout/activity_main.xml" value="0.3489583333333333" />
-        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/layout/fragment_photos.xml" value="0.3489583333333333" />
-        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/layout/fragment_selected_photo.xml" value="0.3489583333333333" />
-        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/layout/item_image.xml" value="0.9102167182662538" />
+        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/layout/fragment_photos.xml" value="0.2587101556708673" />
+        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/layout/fragment_selected_photo.xml" value="0.25" />
+        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/layout/item_image.xml" value="0.25" />
+        <entry key="..\:/AndroidGeek/UI/Photoselection/app/src/main/res/menu/toolbar_menu.xml" value="0.3489583333333333" />
       </map>
     </option>
   </component>
